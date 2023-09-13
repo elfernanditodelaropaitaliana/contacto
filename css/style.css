@@ -1,0 +1,297 @@
+:root{
+    --negro: #000;
+    --blanco: #fff;
+    --aqua: #00FFFF; 
+    --celeste: #00c3ff;
+    --azul: #191c32;
+    --gris: #24262b;
+    --gris2:#BBBBBB;
+    --aliceblue:#F0F8FF;
+}
+
+
+
+html {
+    font-size: 62.5%; /* = 10px */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth;
+}
+body{
+    font-size: 62.5%; /* = 10px */
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+.wrapper{
+    width:100%;
+    height: 100vh;
+    background-color:var(--azul);
+    color:var(--blanco)
+    
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 2em;
+    font-size: 1.8rem;
+    width:100%;
+    
+}
+.iniciales{
+    transition: 300ms;
+    
+}
+.iniciales:hover{
+    transform: rotate(-15deg);
+}
+.brand{
+    margin-top: -0.7rem;
+}
+.brand span{
+    color: var(--aqua);
+}
+.menu{
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+}
+.menu li{
+    list-style: none;
+}
+.menu a{
+    color: var(--aqua);
+    text-decoration: none;
+    padding:1rem 2rem ;
+    border-radius: 2.5rem;
+}
+.menu a:hover{
+    background-color: var(--aqua);
+    color:var(--azul);
+    transition: ease-in .3s;
+}
+.contprincipal{
+    margin: 0 auto;
+    width: 80vw;
+    height: 80vh;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+}
+h1{
+    font-size: 9.5rem;
+    transition: 300ms;
+    
+}
+h1:hover{
+    transform: translateY(-1rem);
+}
+p{
+    font-size: 2.5rem;
+   text-align:justify
+    
+}
+span{
+    color:var(--aqua);
+}
+.dad{
+    margin-top: 4rem;
+}
+.boton{
+    padding: 1rem 2rem;
+    background-color: var(--aqua);
+    border: none;
+    border-radius: 3rem;
+    text-decoration: none;
+    margin-top: 1rem;
+    font-size: 2.5rem;
+    transition:all 300ms;
+    color: var(--negro);
+}
+.boton:hover{
+    background-color: var(--negro);
+    color: var(--blanco);
+}
+.contprincipal img{
+    width: 25rem;
+    
+    border-radius: 75rem;
+    margin-left: 25rem;
+    transition: all 200ms;
+}
+.contprincipal img:hover{
+    transform: scale(1.1);
+
+}
+.sobremi{
+    height: 100vh;
+    width:100%;
+    background: linear-gradient(to bottom, var(--azul) , var(--negro));
+    margin: 0 auto;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+}
+.sobremi-info{
+    color: var(--blanco);
+    margin-right: 6rem;
+}
+.sobremi img{
+    margin-left: 5rem;
+    transition: 300ms;
+}
+.sobremi img:hover{
+    transform: rotate(-12deg);
+}   
+.curri{
+    height: 100vh;
+    width:100%;
+    background: linear-gradient(to bottom,var(--negro) ,var(--azul) );
+    margin: 0 auto;
+    
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+}
+.curri-info{
+    color:var(--blanco);
+    margin-right: 6rem;
+}
+.curri img{
+    margin-left: 5rem;
+    transition: 300ms;
+}
+.curri img:hover{
+    transform: rotate(-12deg);
+}   
+
+
+
+.footer {
+    background-color: var(--gris);
+    padding: 4rem 0;
+    text-align: center; 
+}
+
+.footer-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.footer-links {
+    width: 100%;
+    padding: 0 1rem;
+    margin-bottom: 2rem;
+}
+
+.footer-links h4 {
+    font-size: 2rem;
+    color: var(--blanco);
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+    border-bottom: 0.2rem solid var(--celeste);
+    padding-bottom: 0.5rem;
+    display: inline-block;
+}
+
+.social-link {
+    display: flex;
+    justify-content: center; 
+    gap: 1rem; 
+    margin-top: 1rem; 
+}
+
+.social-link >a {
+    min-height: 3rem;
+    width: 3rem;
+    background-color: rgba(255, 255, 255, 0.214);
+    text-align: center;
+    line-height: 3rem;
+    border-radius: 50%;
+    color: var(--blanco);
+    transition: all 0.5s ease;
+}
+
+.social-link a:hover {
+    background-color: var(--celeste);
+}
+
+.social-link a i {
+    font-size: 1.5rem;
+
+}
+
+#sobremii:target,#contacto:target, #Curriculum:target  {
+    border: 0.2rem solid var(--negro);
+}
+
+.boton:focus{
+    background-color: var(--aliceblue);
+}
+
+:root {
+    /* Your color variables remain unchanged */
+}
+
+/* Global Styles */
+html {
+    font-size: 62.5%; /* = 10px */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: 1.6rem; /* 16px */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Responsive Media Queries */
+/* Small screens (up to 767px) */
+
+    @media (max-width: 768px) {
+        .navbar {
+            flex-direction: column;
+            padding: 1em;
+            font-size: 1.5rem;
+        }
+        .menu {
+            flex-direction: column;
+            width: 100%;
+        }
+        .menu a {
+            padding: 0.5rem 1rem;
+        }
+        .contprincipal img {
+            margin-left: 0;
+        }
+        h1 {
+            font-size: 4rem;
+        }
+        p {
+            font-size: 1.6rem;
+        }
+        
+        }
+    .boton {
+            font-size: 1.6rem;
+        }
+    }
+    
+    /* Tablet and Desktop styles */
+    @media (min-width: 769px) {
+        .menu {
+            width: auto;
+        }
+        .contprincipal {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
